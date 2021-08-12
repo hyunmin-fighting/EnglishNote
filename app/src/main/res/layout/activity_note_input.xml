@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteInputActivity"
+    android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_eng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/btn_save"
+            android:hint="영어 단어 입력..."
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/et_kor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/btn_save"
+            android:layout_below="@+id/et_eng"
+            android:hint="한글 단어 입력..."
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="저장"
+            android:textColor="#605F5F"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#C5CAE9"/>
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_save"
+            android:layout_alignLeft="@+id/btn_save"
+            android:layout_toRightOf="@id/btn_save"
+            android:layout_marginBottom="2dp"
+            android:text="검색"
+            android:textColor="#605F5F"
+            android:backgroundTint="#C5CAE9"/>
+        <Button
+            android:id="@+id/btn_goOrigin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_search"
+            android:layout_alignLeft="@+id/btn_save"
+            android:layout_toRightOf="@id/btn_save"
+            android:layout_marginBottom="2dp"
+            android:text="검색종료"
+            android:textColor="#EF5350"
+            android:backgroundTint="#B2DFDB"/>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/btn_save"
+            android:layout_below="@+id/et_kor"
+            android:layout_above="@+id/lv_note"
+            android:text="찾은갯수"
+            android:textSize="12dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#C1C0C0" />
+
+        <ListView
+            android:id="@+id/lv_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/btn_goOrigin"
+            android:background="#FFCDD2"/>
+
+</RelativeLayout>
+
+
+<!--<androidx.appcompat.widget.LinearLayoutCompat-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:orientation="horizontal">-->
+<!--<androidx.appcompat.widget.LinearLayoutCompat-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_weight="0.4">-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_eng"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:hint="영어 단어 입력..."-->
+<!--        android:textSize="20dp" />-->
+<!--    <EditText-->
+<!--        android:id="@+id/et_kor"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:hint="한글 단어 입력..."-->
+<!--        android:textSize="20dp"/>-->
+
+
+<!--</androidx.appcompat.widget.LinearLayoutCompat>-->
+
+<!--<androidx.appcompat.widget.LinearLayoutCompat-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_weight="1">-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_save"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="15dp"-->
+<!--        android:text="저장"-->
+<!--        android:textColor="#605F5F"-->
+<!--        android:backgroundTint="#C5CAE9"/>-->
+
+<!--</androidx.appcompat.widget.LinearLayoutCompat>-->
+<!--</androidx.appcompat.widget.LinearLayoutCompat>-->
+
